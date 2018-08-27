@@ -1,0 +1,13 @@
+{% extends "master.njk" %}
+
+{% block body %}
+	<article class="news">
+		<header class="news-header">
+			<h1>{{ title }}</h1>
+		</header>
+
+		<div class="news-content">
+			{{ contents | safe }}
+		</div>
+	</article>
+{% endblock %}
